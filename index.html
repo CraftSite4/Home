@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CraftSite</title>
+
+        <link rel="icon" type="image/png" href="Cobblestone Textured Logo with Tagline (2).png">
+
+    <!-- Minecraft Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR --> 
+ <nav>
+     <div class="logo"> 
+    <img src="Cobblestone Textured Logo with Tagline (2).png" height="92"> 
+</div> <ul> <li id="nav-home" onclick="showSection('home', this)">Home</li> 
+    <li id="nav-about" onclick="showSection('about', this)">About Us</li> 
+    <li id="nav-stream" onclick="showSection('stream', this)">Stream</li> 
+    <li id="nav-contact" onclick="showSection('contact', this)">Contact Us</li>
+
+ </ul> 
+</nav>
+
+
+<!-- HTML -->
+<audio id="minecraft-audio" src="1-07. Haggstrom.mp3" loop></audio>
+
+<!-- JS -->
+<script>
+  const audio = document.getElementById('minecraft-audio');
+  audio.volume = 0.2; // 20% volume
+
+  // Play audio on first click anywhere
+  document.body.addEventListener('click', () => {
+    if(audio.paused) {
+      audio.play();
+      console.log("Music started");
+    }
+  }, { once: true }); // Only triggers once
+</script>
+
+
+<!-- HOME -->
+<section id="home">
+    <div class="textbox">
+        <h2><b>CraftSite</b></h2>
+        <p><small>Building, Streaming & Minecraft Challenges</small></p>
+    </div>
+
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="ScreenRecording_11-26-2025 16-07-54_1.mp4" type="video/mp4">
+    </video>
+</section>
+
+<!-- ABOUT US -->
+<section id="about" style="display:none;">
+    <div class="content-card">
+          <div class="about-box">
+            <h3>Who We Are</h3>
+            <p><b>We are the CraftSite group#4, a team of students who is passionate about building creative and interactive Minecraft experiences. And had work together to plan a Mini-Game to explore new ideas and fun engaging content. CraftSite is here for creating fun, creativity, and community-driven Minecraft experiences.</b></p>
+        </div>
+
+        <div class="about-box">
+            <h3>What We Do</h3>
+            <p><b>In/At Craftsite, we build minecraft Mini Games, develop maps and into creating a livestream content thats exciting with clear visuals to watch with fun challenges that keep the players and especially the viewers entertained.</b></p>
+        </div>
+
+        <div class="about-box">
+            <h3>Our Mission</h3>
+            <p><b>The mission is not only to bring people together through creativity and teamwork but we aim to deliver an amazing and enjoyable minecraft experiences that can spark the player’s imagination and make every challenge a memorable one.</b></p>
+        </div>
+
+
+        <h3 class="team-title">Meet the Team</h3>
+        <div class="team-container">
+    
+            <div class="team-member">
+                <img src="RUZZEL SKIN.png" alt="Member 1 Skin">
+                <img src="RUZZEL.png" style="width: 105px; height: auto">
+
+            </div>
+            <div class="team-member">
+                <img src="JUSTIN SKIN.png" alt="Member 2 Skin">
+                <img src="JUSTIN.png" style="width: 80px; height: auto;">
+            </div>
+            <div class="team-member">
+                <img src="KHURT SKIN.png" alt="Member 3 Skin">
+                <img src="KHURT.png" style="width: 80px; height: auto;">
+            </div>
+            <div class="team-member">
+                <img src="BELLA SKIN.png" alt="Member 4 Skin">
+                <img src="BELLA.png" style="width: 80px; height: auto;">
+            </div>
+            <div class="team-member">
+                <img src="LUIS SKIN.png" alt="Member 5 Skin">
+                <img src="LUIS.png" style="width: 80px; height: auto;">
+            </div>
+            <div class="team-member">
+                <img src="ZACH SKIN.png" alt="Member 6 Skin">
+                <img src="ZACH.png" style="width: 80px; height: auto;">
+            </div>
+            <div class="team-member">
+                <img src="JOAB SKIN.png" alt="Member 7 Skin">
+                <img src="JOAB.png" style="width: 80px; height: auto;">
+            </div>
+        </div>
+    </div>
+    
+
+<p style="font-family: 'Press Start 2P', cursive; font-size: 14px; color: #ffffff; margin-top: 20px; text-align:center;">
+    <big><big>"Let's craft a dream, block by block!" </big></big>
+</section>
+
+</p>
+
+<!-- STREAM SECTION -->
+<section id="stream" style="display:none;">
+    <div class="content-card">
+
+        <h2 class="team-title">Tutorial & Videos</h2>
+
+        <div class="video-grid">
+            <div class="video-box">
+                <iframe 
+                    src="https://www.youtube.com/embed/oE04c4pRdu4" 
+                    frameborder="0" 
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="video-box">
+                <iframe 
+                    src="https://www.youtube.com/embed/4j--etBK8tE"
+                    frameborder="0" 
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="video-box">
+                <iframe 
+                    src="https://www.youtube.com/embed/vEXPVGE-ZaU"
+                    frameborder="0" 
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="video-box">
+                <iframe 
+                    src="https://www.youtube.com/embed/HjqkrPHZQyA"
+                    frameborder="0" 
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        
+        <hr style="margin:30px 0; border-color:#00ff00;">
+
+        <h2 class="team-title">Tips and Tricks Videos</h2>
+
+        <div class="video-grid">
+    <div class="video-box">
+        <iframe 
+            src="https://www.youtube.com/embed/HjqkrPHZQyA" 
+            frameborder="0" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="video-box">
+        <iframe 
+            src="https://www.youtube.com/embed/vEXPVGE-ZaU" 
+            frameborder="0" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="video-box">
+        <iframe 
+            src="https://www.youtube.com/embed/4j--etBK8tE" 
+            frameborder="0" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="video-box">
+        <iframe 
+            src="https://www.youtube.com/embed/oE04c4pRdu4" 
+            frameborder="0" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+</section>
+
+
+<!-- PLAYER 2 FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<!-- CONTACT -->
+<section id="contact" style="display:none;">
+    <div class="content-card" style="text-align:center;">
+
+        
+        <h3 style="font-size:22px; margin-top:20px; 
+                   font-family:'Press Start 2P', cursive; font-weight:400;">
+            Our Twitch Profile
+        </h3>
+
+        
+        <img src="Untitled design.png" 
+             style="width:640px; height:auto; margin:20px auto;" 
+             alt="Twitch Profile">
+
+         <small><h3 style="font-family: 'Press Start 2P', cursive;">Contact Us</h3></small>
+        <div class="contact-icons" 
+             style="display:flex; justify-content:center; gap:25px; margin-top:25px;">
+
+            <a href="mailto:craft4site@gmail.com" target="_blank">
+                <img src="gemel logo.webp" style="width:45px; height:45px;" alt="Email">
+            </a>
+
+            <a href="https://www.instagram.com/craft4site" target="_blank">
+                <img src="INSTAGRAM LOGO.webp" style="width:45px; height:45px;" alt="Instagram">
+            </a>
+
+            <a href="https://www.twitch.tv/craft4site" target="_blank">
+                <img src="twitch-logo_578229-259.avif" style="width:45px; height:45px;" alt="Twitch">
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+<footer>
+    &copy; 2025 CraftSite | Minecraft Challenges, Building & Streaming
+
+</footer>
+
+<script>
+function showSection(sectionId, element) {
+    const sections = ['home','about','stream','contact'];
+
+    sections.forEach(id => {
+        const el = document.getElementById(id);
+        if(el) el.style.display = (id === sectionId) ? 'block' : 'none';
+    });
+
+    document.querySelectorAll('nav ul li').forEach(li => li.classList.remove('active'));
+    if(element) element.classList.add('active');
+
+    // Show video only on HOME
+    const video = document.getElementById("bg-video");
+    if(sectionId === "home") {
+        video.style.display = "block";
+    } else {
+        video.style.display = "none";
+    }
+}
+
+// Initial section
+document.getElementById('nav-home').classList.add('active');
+document.getElementById('home').style.display = 'block';
+</script>
+
+</body>
+</html>
+
+
+
